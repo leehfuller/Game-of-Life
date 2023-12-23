@@ -79,8 +79,10 @@ namespace GameOfLive.Bacteria
                 {
                     if (neighbourCount < 2)
                         bacteria.IsAlive = false;
+
                     if (neighbourCount == 2 || neighbourCount == 3)
                         bacteria.IsAlive = true;
+
                     if (neighbourCount > 3)
                         bacteria.IsAlive = false;
                 }
@@ -119,5 +121,6 @@ namespace GameOfLive.Bacteria
                 }
             }
         }
+
     }
 }

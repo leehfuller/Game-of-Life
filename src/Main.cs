@@ -88,8 +88,10 @@ namespace GameOfLive
             {
                 _graphicsDeviceManager.PreferredBackBufferHeight =
                     (_uiElements[0] as BaseGame).CellCountY * (_uiElements[0] as BaseGame).CellSize + 1;
+
                 _graphicsDeviceManager.PreferredBackBufferWidth =
                     (_uiElements[0] as BaseGame).CellCountX * (_uiElements[0] as BaseGame).CellSize + 1 + 250;
+
                 _graphicsDeviceManager.ApplyChanges();
 
             }
